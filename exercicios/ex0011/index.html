@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/fotorosto.jpg" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+    <!-- <picture> -->
+        <!-- <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> -->
+        <!-- <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> -->
+        <!-- <img src="imagens/foto-g.png" alt="Imagem flexível"> -->
+    </picture>
+    <!-- Exemplo abaixo fiz com fotos diferentes mais dentro do que foi pedido -->
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/imgamor-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/imgamor-m.jpg" type="image/jpg">
+        <img src="imagens/imgamor-g.jpg" alt="Imagem flexível">
+        <p>Nossas fotos no monte</p>
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir Áudios em HTML5</p>
+    <audio src="midia/audio3.opus"controls autoplay loop></audio>
+    <audio src="midia/audio1.opus"controls autoplay></audio>
+    <audio src="midia/audio2.opus"controls autoplay loop></audio>
+    <audio src="midia/audio4.opus"controls autoplay></audio>
+    <audio src="midia/audio5.opus"controls autoplay></audio>
+    <p>Infelizmente o teu navegador não consegue reproduzir audio. <a href="midia/audio4.opus">clique aqui para baixar o arquivo mp3</a></p>
+    
+    <!-- forma diferente de adicionar audio  -->
+    <!--<audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio1.opus" type="audio/opus">
+        <source src="midia/audio1.opus" type="audio/mp3">
+        <source src="midia/audio1.opus" type="audio/ogg">
+        <source src="midia/audio1.opus" type="audio/wave">
+        <p>Infelizemente o teu navegador não consegue reproduzir audio. <a href="midia/audio1.opus" >Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>-->
+</body>
+</html>

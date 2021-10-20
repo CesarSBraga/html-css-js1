@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/imgamor-p.jpg" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+    <style>
+        body{
+            background-color: rgb(73, 53, 28);
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- inserindo videos um ao lado do outro da forma mais simples -->
+    <!-- <video src="midia/20210704_113928.mp4" width="200" controls></video>
+    <video src="midia/20210709_111906.mp4" width="200" controls loop></video>
+    <video src="midia/20210711_112926.mp4" width="200" controls></video>
+    <video src="midia/20210711_112938.mp4" width="200" controls></video>
+    <video src="midia/20210711_113048.mp4" width="200" controls></video> -->
+   
+    <!-- outra forma de inserir videos mas só um por vez, tem que repetir o bloco para cada video igual fiz abaixo -> cada bloco insere um videos o comando poster insere uma capa no video -->
+    <video width="200" controls autoplay loop poster="imagens/imgamor-p.jpg">
+        <source src="midia/20210709_111906.mp4" type="video/mp4">
+    </video>
+    <video width="200" controls loop autoplay poster="imagens/imgamor-p.jpg">
+        <source src="midia/20210711_112926.mp4" type="video/mp4" >
+    </video>
+    <video width="200" controls autoplay loop poster="imagens/imgamor-p.jpg">
+        <source src="midia/20210704_113928.mp4" type="video/mp4">
+    </video>
+    <video width="200" controls poster="imagens/imgamor-p.jpg">
+        <source src="midia/20210711_112938.mp4" >
+    </video>
+    <video width="200" controls poster="imagens/imgamor-p.jpg">
+        <source src="midia/20210711_113048.mp4">
+    </video>
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p><!--ira aparecer esta mensagem caso o navegador nao tenha compatibilidade com o formato do video-->
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fAfU-5UiWus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qW4iiGvGCNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeo do Vímeo</h1>
+    <iframe src="https://player.vimeo.com/video/24943895?h=c3500a0e5a" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+body{
+    background-image: linear-gradient(to left, red,#F5FF69, #83997C, #C0A8FF, red);
+}
+h1, p {
+    text-align: center;
+    border-radius: 10px;
+}
